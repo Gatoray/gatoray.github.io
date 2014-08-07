@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<!-- BLOG HOLDER -->
+<div class="blog-container">
+    <div class="row">
+        <div class="col-md-9 col-sm-9 col-xs-9">
+           <h1 id="blog-title">
+               {{ page.title }}
+           </h1>
+           <h6 id="time-stamp">
+               {{ page.date | date: "%m/%d/%Y" }}
+           </h6>
+            <p id="blog-content">
+                {{ content | strip_html }}
+            </p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+           <h4 id="previous-posts">
+               Previous Posts
+           </h4>
+            <p id="previous-posts-content">
+                {% for posts in site.categories.blog limit:20 %}
+                    
+                    <a href="{{ posts.url }}">{{ posts.title }}</a>
+                    <br>
+                    
+                {% endfor %}
+            </p>
+            <a href="">List all posts</a>
+        </div>
+    </div>
+</div>

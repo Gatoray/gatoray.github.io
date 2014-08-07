@@ -107,3 +107,53 @@ html,body {
     a:hover {
         color: #99cc99;
     }
+    .blog-container {
+        min-height: 512px;
+        min-width: 512px;
+        height: auto;
+        margin: 32px;
+    }
+    .blog-container div div {
+        margin: 8px;
+        background-color: #fff;
+        max-width: 768px;
+    }
+    .blog-container div div p {
+        font-size: 16px;
+        min-height: 512px;
+        height: auto;
+    }
+    #blog-content {
+        margin: 16px;
+    }
+    #previous-posts-content {
+        font-size: 10px;
+    }
+    #blog-title {
+        color: #fff;
+        background-color: #6c6;
+    }
+    #previous-posts {
+        color: #6c6;
+    }
+    #time-stamp {
+        color: #aaa;
+        text-align: right;
+    }
+    .archive-container {
+        border-style: solid;
+        border-color: #6c6;
+        border-width: 3px;
+        -webkit-border-radius: 20px !important;
+        -moz-border-radius: 20px !important;
+        border-radius: 20px !important;
+        text-align: center;
+        min-height: 512px;
+        width: 512px;
+        height: auto;
+        margin: 32px auto;
+        background-color: #fff;
+    }
+    .archive-container th {
+        text-align: center;
+    }

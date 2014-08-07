@@ -4,8 +4,14 @@
    <!-- NAV BAR -->
        
 <div id="nav">
-    <a class="btn btn-default" href="#" role="button">Comic</a>
-    <a class="btn btn-default" href="#" role="button">Blog</a>
+    {% for posts in site.categories.comic limit:1 %}
+    <a class="btn btn-default" href="{{ posts.url }}" role="button">Comic</a>
+    {% endfor %}
+    
+    {% for posts in site.categories.blog limit:1 %}
+    <a class="btn btn-default" href="{{ posts.url }}" role="button">Blog</a>
+    {% endfor %}
+    
     <a class="btn btn-default" href="#" role="button">Stuff</a>
     <a class="btn btn-default" href="#" role="button">About</a>
 </div>

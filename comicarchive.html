@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /comicarchive.html
+---
+
+<!-- Archive -->
+<h2 style="text-align:center;">Comic Archive</h2>
+<div class="archive-container">
+    <table class="table table-condensed table-hover">
+       <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for posts in site.categories.comic %}
+            <tr>
+                <td><a href="{{ posts.url }}">{{ posts.title }}</a></td>
+                <td>{{ posts.date | date: "%m/%d/%Y" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
