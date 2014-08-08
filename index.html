@@ -11,7 +11,7 @@ layout: default
     
     <img class="comic-content" src="{{ posts.image }}">
     <p>
-        {{ posts.content }}
+        {{ posts.content | strip_html }}
     </p>
     
 
@@ -25,17 +25,19 @@ layout: default
         </a>
     </span>
     <span class="col-md-4 col-sm-4 col-xs-4">
-       <a href="" id="archive">
+       <a href="/comicarchive.html" id="archive">
         <img src="/media/site-img/navbtn.png">
         <span id="btntxt">Archive</span>
         </a>
     </span>
+<!--
     <span class="col-md-4 col-sm-4 col-xs-4">
        <a href="{{ posts.comic_prev }}">
         <img src="/media/site-img/arrowright.png">
         <span id="btntxt">Next</span>
         </a>
     </span>
+-->
 </div>
 
 {% endfor %}

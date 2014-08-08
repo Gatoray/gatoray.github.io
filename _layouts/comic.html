@@ -8,29 +8,40 @@ layout: default
     <h1>{{page.title}}</h1>
    
     <img class="comic-content" src="{{ page.image }}">
-    <p>
+        
         {{ content }}
-    </p>
-
+        
 </div>
 
 <div class="row" id="comicnav">
+   
+    {% if page.comic_next != nil %}
     <span class="col-md-4 col-sm-4 col-xs-4">
        <a href="{{ page.comic_next }}">
         <img src="/media/site-img/arrowleft.png">
         <span id="btntxt">Previous</span>
         </a>
     </span>
+    {% else %}
+    <span class="col-md-4 col-sm-4 col-xs-4"></span>
+    {% endif %}
+    
     <span class="col-md-4 col-sm-4 col-xs-4">
-       <a href="#" id="archive">
+       <a href="/comicarchive.html" id="archive">
         <img src="/media/site-img/navbtn.png">
         <span id="btntxt">Archive</span>
         </a>
     </span>
+    
+    {% if page.comic_prev != nil %}
     <span class="col-md-4 col-sm-4 col-xs-4">
        <a href="{{ page.comic_prev }}">
         <img src="/media/site-img/arrowright.png">
         <span id="btntxt">Next</span>
         </a>
     </span>
+    {% else %}
+    <span class="col-md-4 col-sm-4 col-xs-4"></span>
+    {% endif %}
+    
 </div>

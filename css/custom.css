@@ -1,4 +1,6 @@
 html,body {
+        margin:0;
+        padding:0;
         height: 100%;
     }
     body {
@@ -10,13 +12,21 @@ html,body {
         margin-bottom: 16px;
     }
     .comic-container p {
+        font-family: 'PT Sans', sans-serif;
         text-align: auto;
         font-size: 14px;
         margin: 16px auto;
         background-color: #fff;
         width: 512px;
+        border-style: solid;
+        border-color: #6c6;
+        border-width: 2px;
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        border-radius: 0px !important;
     }
     .comic-container h1 {
+        font-family: 'Francois One', sans-serif;
         text-align: center;
         margin: 8px;
     }
@@ -34,6 +44,7 @@ html,body {
         height: 100%;
     }
     #nav {
+        font-family: 'Francois One', sans-serif;
         display: block;
         margin: 0 auto; 
         text-align: center;
@@ -48,6 +59,7 @@ html,body {
         width: auto;
     }
     #comicnav {
+        font-family: 'Francois One', sans-serif;
         display: block;
         margin: 0 auto;
         text-align: center;
@@ -55,6 +67,7 @@ html,body {
         white-space: nowrap;
     }
     #title {
+        font-family: 'Francois One', sans-serif;
         display: block;
         margin: 0 auto;
         text-align: center;
@@ -65,19 +78,6 @@ html,body {
         padding-bottom: 15px;
         width: 100px;
         background-image: url("http://placehold.it/100x50");
-    }
-    #footer {
-        height:30px;
-        width: 100%;
-        margin:auto;
-        background-color: #eee;
-        background-repeat: repeat;
-        background-attachment: scroll;
-        background-position: 0% 0%;
-        position: fixed;
-        bottom: 0pt;
-        left: 0pt;
-        text-align: center;
     }
     #btntxt {
         color: #585;
@@ -114,13 +114,20 @@ html,body {
         margin: 32px;
     }
     .blog-container div div {
+        border-style: solid;
+        border-color: #6c6;
+        border-width: 3px;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        border-radius: 10px !important;
         margin: 8px;
         background-color: #fff;
         max-width: 768px;
     }
     .blog-container div div p {
+        font-family: 'PT Sans', sans-serif;
         font-size: 16px;
-        min-height: 512px;
+        min-height: 256px;
         height: auto;
     }
     #blog-content {
@@ -130,10 +137,12 @@ html,body {
         font-size: 10px;
     }
     #blog-title {
+        font-family: 'Francois One', sans-serif;
         color: #fff;
         background-color: #6c6;
     }
     #previous-posts {
+        font-family: 'Francois One', sans-serif;
         color: #6c6;
     }
     #time-stamp {
@@ -156,4 +165,38 @@ html,body {
     }
     .archive-container th {
         text-align: center;
+    }
+    .about-container {
+        font-family: 'PT Sans', sans-serif;
+        border-style: solid;
+        border-color: #6c6;
+        border-width: 3px;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        border-radius: 10px !important;
+        text-align: center;
+        min-height: 512px;
+        width: 700px;
+        height: auto;
+        margin: 32px auto;
+        background-color: #fff;
+    }
+    .about-container h1 {
+        font-family: 'Francois One', sans-serif;
+    }
+    .about-container h2 {
+        font-family: 'Francois One', sans-serif;
+    }
+    .about-container h3 {
+        font-family: 'Francois One', sans-serif;
+    }
+    .about-container table {
+        margin: 0 auto;
+        width: 500px;
+        text-align: left;
+    }
+    #footer {
+        font-size: 10px;
+        text-align: center;
+        color: #585;
     }

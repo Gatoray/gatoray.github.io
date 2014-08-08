@@ -9,6 +9,6 @@ github_username:  gatoray
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title.html
 highlighter: rouge
 encoding: utf-8
